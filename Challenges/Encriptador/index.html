@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" src="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hola</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <div class="initialbox">
+            <input type="button" id="reset" value="borrar" onclick="reset();">
+            <input type="text" id="etext" placeholder="Ingresa tu texto aqui" name="textbox">
+            <input type="submit" value="Encriptar" onclick="sndbtn('e')">
+            <input type="button" value="Desencriptar" onclick="sndbtn('d')">
+        </div>
+        <div class="lastbox">
+            <input type="button" value="⬅️" onclick="swapvalue()">
+            <input type="text" id="dtext" name="" id="" disabled>
+            <input type="button" value="copiar" onclick="copy()">
+        </div>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

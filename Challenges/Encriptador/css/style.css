@@ -70,6 +70,19 @@ article{
     margin-bottom: 10px;
 }
 
+#suscat{
+    position: absolute;
+    width: 40%;
+    height: 75%;
+    top: 50px;
+}
+#sustext{
+    color: white;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 40px;
+    text-shadow: 1px 1px 10px black;
+}
 #dtext , #etext {
     width: 90%;
     height: 25rem;
@@ -191,6 +204,15 @@ article{
     #swap{ 
         width: 150px;
         writing-mode: vertical-lr;
+    }
+    #suscat{
+        width: 90%;
+        height: 30%;
+        position: absolute;
+        top: 750px;
+    }
+    #sustext{
+        bottom: 50px;
     }
 }
 @media(min-height: 710px) and (min-width: 1300px){

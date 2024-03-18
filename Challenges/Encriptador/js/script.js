@@ -12,6 +12,8 @@ function sndbtn(tipo){//check if the checkbox is empty or if is filled, execute 
         alert("inserta el mensaje que quieras utilizar en la caja de texto");
     }
     else{
+        document.getElementById('suscat').style.display = "none";
+        document.getElementById('sustext').style.display = "none";
         if(tipo == 'e'){
             let ft = encriptacion(texts);
             replacetxt(ft);
@@ -64,11 +66,16 @@ function textbox(){//get the text into the chatbox
 
 function reset(){ //reset window to delete the text in the textbox
     document.getElementById('etext').value = '';
+    document.getElementById('dtext').value = '';
+    document.getElementById('suscat').style.display = "block";
+    document.getElementById('sustext').style.display = "block";
 }
 
 function swapvalue(){//swap the value from the second box to the first box
     document.getElementById('etext').value = document.getElementById('dtext').value;
     document.getElementById('dtext').value = '';
+    document.getElementById('suscat').style.display = "block";
+    document.getElementById('sustext').style.display = "block";
 }
 
 function copy(){ //copy to the clipboard the text into the second box

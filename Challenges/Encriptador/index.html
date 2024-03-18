@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" src="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1>Hola</h1>
+        <h1>Encriptador & Desencriptador de texto</h1>
     </header>
     <nav></nav>
     <main>
-        <div class="initialbox">
-            <input type="button" id="reset" value="borrar" onclick="reset();">
-            <input type="text" id="etext" placeholder="Ingresa tu texto aqui" name="textbox">
-            <input type="submit" value="Encriptar" onclick="sndbtn('e')">
-            <input type="button" value="Desencriptar" onclick="sndbtn('d')">
-        </div>
-        <div class="lastbox">
-            <input type="button" value="⬅️" onclick="swapvalue()">
-            <input type="text" id="dtext" name="" id="" disabled>
-            <input type="button" value="copiar" onclick="copy()">
-        </div>
+        <section>
+            <article>
+                <div class="initialbox">
+                    <input type="button" id="reset" value="Reset" onclick="reset();">
+                    <textarea type="text" id="etext" placeholder="Ingresa tu texto aqui" name="textbox"></textarea>
+                    <div class="eandd">
+                        <input type="submit" class="button" value="Encriptar" onclick="sndbtn('e')">
+                        <input type="button" class="button" value="Desencriptar" onclick="sndbtn('d')">
+                    </div>
+                </div>
+                <input type="button" id="swap" value="⬅️" onclick="swapvalue()">
+                <div class="lastbox">
+                    
+                    <textarea type="text" id="dtext" name="" id="" disabled></textarea>
+                    <input type="button" id="copy" value="Copiar" onclick="copy()">
+                </div>
+            </article>
+        </section>        
     </main>
     <aside>
 
     </aside>
-    <footer>
-
+    <footer class="footer">
+        <p class="footer-autor">Creado por Miguets</p>
+        <p class="footer-contact">Contacto:</p>
+        <div class="contact-links">
+            <a href="https://github.com/miguets" target="_blank">Github<img src="./src/github_logo.png" alt="Github Logo" width="25" height="25"/></a>
+            <a href="https://www.linkedin.com/in/miguets/" target="_blank">Linkedin<img src="./src/linkedin-logo.webp" alt="Linkedin Logo" width="25" height="25"/></a>
+            <a href="https://twitter.com/miguetss" target="_blank">Twitter<img src="./src/twitter-logo.png" alt="Twitter Logo" width="25" height="25"/></a>
+        </div>
     </footer>
     <script src="./js/script.js"></script>
 </body>

@@ -9,7 +9,7 @@ const key = {
 function sndbtn(tipo){//check if the checkbox is empty or if is filled, execute the encriptation or desencriptation :v
     let texts = textbox();
     if(texts.length == 0){
-        alert("inseta el mensaje que quieras utilizar en la caja de texto");
+        alert("inserta el mensaje que quieras utilizar en la caja de texto");
     }
     else{
         if(tipo == 'e'){
@@ -63,7 +63,7 @@ function textbox(){//get the text into the chatbox
 }
 
 function reset(){ //reset window to delete the text in the textbox
-    window.location.reload();
+    document.getElementById('etext').value = '';
 }
 
 function swapvalue(){//swap the value from the second box to the first box
